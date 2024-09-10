@@ -16,17 +16,79 @@ header {
     z-index: 1000;
 }
 
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
 .parallax {
-    background-image: url('https://via.placeholder.com/1200x800');
-    min-height: 400px;
+    /* Default properties for parallax effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 90%;
 }
 
+/* Specific heights and images for each parallax section */
+.parallax-1 {
+    background-image: url('https://cdn.pixabay.com/photo/2020/03/09/15/30/painting-4916118_1280.jpg');
+    height: 60%;
+}
+
+.parallax-2 {
+    background-image: url('https://cdn.pixabay.com/photo/2020/03/09/15/30/painting-4916118_1280.jpg');
+    height: 60%;
+}
+
+
+.parallax-3 {
+    background-image: url('https://images.pexels.com/photos/6940878/pexels-photo-6940878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    height: 60%;
+}
+
+
+
+/* Content section styling */
+.content {
+    height: 470px;
+    background-color: #002040;  ;
+    font-size: 25px;
+    overflow: auto;
+    color: rgba(253, 253, 253, 0.763);
+    padding: 20px;
+   
+}
+
+.content2 {
+    height: 250px;
+    background-color: #002040;  ;
+    font-size: 25px;
+    overflow: auto;
+    color: rgba(253, 253, 253, 0.763);
+    padding: 20px;
+    padding-top: 50px
+}
+.content3 {
+    height: 400px;
+    background-color: #002040;  ;
+    font-size: 25px;
+    overflow: auto;
+    color: rgba(253, 253, 253, 0.763);
+    padding: 20px;
+}
 main {
     padding-top: 70px;
+}
+
+#art1-title{
+    color: bisque;
+}
+
+p{
+    line-height: 1.5;
 }
 
 .news-section {
@@ -38,10 +100,10 @@ main {
 
 .news-section img {
     max-width: 100%;
-    height: auto;
+    height: 500px;
 }
 
-button {
+/*button*/ a {
     margin-top: 10px;
     padding: 10px 20px;
     background-color: #333;
@@ -50,9 +112,22 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+/*button*/ a :hover {
     background-color: #555;
 }
+
+a.plain-link {
+    text-decoration: none; /* Fjerner understreking */
+    color:#001dff; /* Beholder tekstfargen fra omgivelsene */
+    background: none;
+    padding: 0;
+}
+
+a.plain-link:hover {
+    text-decoration: underline; /* Understreking på hover */
+}
+
+
 
 footer {
     background-color: #333;
