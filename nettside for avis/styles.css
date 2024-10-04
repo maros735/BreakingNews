@@ -1,3 +1,4 @@
+
 body, html {
     margin: 0;
     padding: 0;
@@ -48,22 +49,6 @@ body, html {
     gap: 1.6em;
 }
 
-
-/* Specific heights and images for each parallax section */
-/*.parallax-1 {
-    
-}*/
-
-/*.parallax-2 {
-    background-image: url('https://cdn.pixabay.com/photo/2020/03/09/15/30/painting-4916118_1280.jpg');
-    height: 60%;
-}*/
-
-
-/*.parallax-3 {
-    background-image: url('https://images.pexels.com/photos/6940878/pexels-photo-6940878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    height: 60%;
-}*/
 
 
 
