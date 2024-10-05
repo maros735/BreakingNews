@@ -3,10 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>apple picking </title>
+    <link rel="stylesheet"   href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <style>
+        #mapContainer { width: 800px; height: 600px;
+            margin: 10px auto;
+        
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
 </head>
 <body>
+    <h1>A story about apple picking</h1>
+   <div id="mapContainer"></div>
+    <script>
+       const centerLat = 59.926790
+        const centerLong =  10.593612
+
+        let mapMain = L.map('mapContainer', {
+            center: [centerLat, centerLong],
+            zoom: 13
+        })
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '<a href="https://openstreetmap.org/copyright">Open Street Map</a>'
+        }).addTo(mapMain) 
+
+
+        const appleStations = [  
+            {
+            name:"Bergen Nordre",
+            lat:59.92690941862831, 
+            lng:10.46569879783117,
+            description: "This farm offers apple picking. Open from 14 PM - 18 PM MON-FRI"
+        }, 
+        {
+            name: "Venstre Frogner Gård",
+            lat: 59.926758728953835,
+            lng:10.465654079706427,
+            description: "This farm offers apple picking. Open every weekend, opening/closing hours may vary."
+
+        }, 
+
+        {
+            name: "Avløs Gård", 
+            lat:59.91343743193601,
+            lng: 10.557105739773442,
+            description:"This farm offers apple picking on the weekends, Opening and closing hours may vary"
+
+        }
+
+        ]
+
+        appleStations.forEach(function(station){
+            L.marker([station.lat, station.lng]).addTo(mapMain)
+            .bindPopup(`<b>${station.name} </b> <br>${station.description}`)
+        });
+
+    </script>
+
+
     
 </body>
 </html>
