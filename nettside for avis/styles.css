@@ -1,3 +1,4 @@
+
 body, html {
     margin: 0;
     padding: 0;
@@ -24,60 +25,75 @@ body, html {
     margin: 0;
 }
 
-.parallax {
-    /* Default properties for parallax effect */
+.parallax-container {
+    display: flex;
+    min-height: 110vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    /*  this is where the magic happens:  */
     background-attachment: fixed;
+    background-image: url('https://cdn.pixabay.com/photo/2020/03/09/15/30/painting-4916118_1280.jpg');
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: cover;
+
+  
 }
 
-/* Specific heights and images for each parallax section */
-.parallax-1 {
-    background-image: url('https://cdn.pixabay.com/photo/2020/03/09/15/30/painting-4916118_1280.jpg');
-    height: 60%;
-}
-
-.parallax-2 {
-    background-image: url('https://cdn.pixabay.com/photo/2020/03/09/15/30/painting-4916118_1280.jpg');
-    height: 60%;
-}
-
-
-.parallax-3 {
+.parallax-container2{
     background-image: url('https://images.pexels.com/photos/6940878/pexels-photo-6940878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    height: 60%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 6rem 0;
+    gap: 1.6em;
 }
+
 
 
 
 /* Content section styling */
 .content {
-    height: 470px;
-    background-color: #002040;  ;
-    font-size: 25px;
-    overflow: auto;
-    color: rgba(253, 253, 253, 0.763);
+    display: flex;
+    max-width: 950px;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-   
+    border-radius: 0.5em;
+    color: rgba(253, 253, 253, 0.763);
+    background-color: #002040;
+    box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
+    font-size: 25px;
+
 }
 
 .content2 {
-    height: 250px;
-    background-color: #002040;  ;
-    font-size: 25px;
-    overflow: auto;
-    color: rgba(253, 253, 253, 0.763);
+    display: flex;
+    max-width: 950px;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    padding-top: 50px
+    border-radius: 0.5em;
+    color: rgba(253, 253, 253, 0.763);
+    background-color: #002040;
+    box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
+    font-size: 25px;
+   
+
 }
 .content3 {
-    height: 400px;
-    background-color: #002040;  ;
-    font-size: 25px;
-    overflow: auto;
-    color: rgba(253, 253, 253, 0.763);
+
+    display: flex;
+    max-width: 950px;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
+    border-radius: 0.5em;
+    color: rgba(253, 253, 253, 0.763);
+    background-color: #002040;
+    box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
+    font-size: 25px;
+
 }
 main {
     padding-top: 70px;
@@ -118,7 +134,7 @@ p{
 
 a.plain-link {
     text-decoration: none; /* Fjerner understreking */
-    color:#001dff; /* Beholder tekstfargen fra omgivelsene */
+    color:#00a9ff; /* Beholder tekstfargen fra omgivelsene */
     background: none;
     padding: 0;
 }
