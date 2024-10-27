@@ -1,6 +1,6 @@
 
 body, html {
-    margin: 0;
+    
     padding: 0;
     font-family: Arial, sans-serif;
     overflow-x: hidden;
@@ -20,10 +20,6 @@ header {
 
 
 
-body, html {
-    height: 100%;
-    margin: 0;
-}
 
 .parallax-container {
     display: flex;
@@ -174,8 +170,30 @@ footer ul li {
 }
 
 
-.article2 h1{
+
+#art2headline{
     color:#4a4a4a;
     text-align: center;
     margin-bottom: 20px;
+   
+}
+
+
+
+/* Container for å sentrere den andre artikkelen */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Legg til litt mellomrom rundt */
+}
+
+/* Stiler for .article2 */
+.article2 {
+    max-width: 600px; /* Sett ønsket bredde */
+    padding: 20px;
+    background-color: #f8f8f8; /* Bakgrunnsfarge for "kortet" */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Sørger for sentrering og mellomrom */
 }

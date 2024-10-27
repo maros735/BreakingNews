@@ -14,8 +14,15 @@
     crossorigin=""></script>
 
     <style>
-        #mapContainer { width: 800px; height: 600px;
+        #mapContainer { 
+            width: 800px;
             margin: 10px auto;
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) ;
+            margin-bottom: 20px;
+
+
         
         }
         body {
@@ -24,17 +31,10 @@
             color:#333;
             line-height: 1.6;
             padding:20px;
-            max-width: 1000px;
+            
 
         }
         
-        #mapContainer {
-            width: 100%;
-            height: 500px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) ;
-            margin-bottom: 20px;
-        }
         .leaflet-popup-content-wrapper {
             background-color: #fff;
             color: #333;
@@ -56,7 +56,47 @@
     </style>
 </head>
 <body>
-    <h1>A story about apple picking</h1>
+    <h1 id="art2headline">A story about apple picking</h1>
+    <div class="container">
+      <section class="article2">
+            <p class="art2">
+            As food waste grows and continues to be a global and environmental issue, with an estimate of one fifth of all the food that is produced for consumption being wasted globally according to UNEP food waste index report 2024, and 84kg per inhabitant in Norway in 2020, communities and individuals seek ways to contribute to help this issue.
+            </p>
+
+            <p class="art2">
+            According to the UNEP food waste index report 2024, food waste generates up to 10 per cent of global greenhouse gas emissions,
+             which is five times the total emissions compared to the aviation sector, and 60 percent of food waste happens at households.
+             All the resources which were used to produce the food—including water, land, energy, capital and labor—go to waste.
+            Fruits like apples, when left unharvested, become a part of this problem.
+            This is due to the fact that farmers produce more apples than they can sell, and surplus food often goes to waste because there is no efficient system of collecting them.
+            </p>
+        </section>
+    </div>
+    <!--bilde kommer her?-->
+
+
+    <div class="container">
+        <section class="article2">
+              <p class="art2">
+              One of the ways that has gained popularity to help reduce food waste is by picking apples from local farms and gardens, a simple yet impactful way, which in Norwegian is also called “Epleslang”. 
+              </p>
+  
+              <p class="art2">
+                It is an apple-picking volunteering initiative where individuals harvest apples from local gardens across the city and turn them into juice, which is then sold to support local charities.
+                This initiative prevents thousands of apples going to waste each year and shows an excellent example of how communities can gather together to support a global cause.
+              </p>
+          </section>
+      </div>
+
+      <!-- nytt bilde kommer her?-->
+
+      <div class="container"></div>
+        <section class="article2">
+              <p class="art2">
+                To showcase the growing impact of apple-picking initiatives across the city of Oslo, the map below highlights key locations where farms and organizations put efforts to reduce food waste. 
+              </p>
+        </section>
+
    <div id="mapContainer"></div>
     <script>
        const centerLat = 59.926790
