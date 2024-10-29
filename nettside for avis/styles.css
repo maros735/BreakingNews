@@ -3,7 +3,7 @@ body, html {
     
     padding: 0;
     font-family: Arial, sans-serif;
-    overflow-x: hidden;
+    
 }
 
 header {
@@ -69,6 +69,8 @@ header {
     box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
     font-size: 15px;
     margin-right: 20rem;
+    
+    
 
 }
 
@@ -172,11 +174,24 @@ footer ul li {
 
 
 #art2headline{
-    color:#4a4a4a;
+    color: #9dd99b;
     text-align: center;
     margin-bottom: 20px;
-   
+    font-family: "Gluten", cursive;
+    font-weight: 700;
+   font-size: 100px;
 }
+
+
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Legg til litt mellomrom rundt */
+    margin-top: 22rem;
+    
+}
+
 
 
 
@@ -186,6 +201,7 @@ footer ul li {
     justify-content: center;
     align-items: center;
     padding: 20px; /* Legg til litt mellomrom rundt */
+    margin-top: 5rem;
 }
 
 /* Stiler for .article2 */
@@ -197,3 +213,62 @@ footer ul li {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto; /* Sørger for sentrering og mellomrom */
 }
+.spacer {
+    height: 200px; /* Dette lager en scroll-effekt */
+}
+
+p.art2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    z-index: 3;
+}
+
+   /* Bakgrunnsstil */
+   .background {
+    background-image: url("https://images.pexels.com/photos/635705/pexels-photo-635705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover; /* Fyller hele området */
+    background-position: center; /* Sentrerer bildet */
+    height: 100%; /* Fyller hele høyden */
+    position: absolute; /* Lar bakgrunnen ligge bak innholdet */
+    width: 100%; /* Fyller hele bredden */
+    z-index: 1; /* Bakgrunn under innholdet */
+    top:0;
+    left: 0;
+}
+
+/* Gjennomsiktig farge over bakgrunnen */
+.overlay {
+    background-color: rgba(0,0,0,0.5); /* Svart med 50% gjennomsiktighet */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; /* Fyller hele høyden */
+    width: 100%; /* Fyller hele bredden */
+    z-index: 2; /* Over innholdet */
+}
+
+/* Innhold */
+.art2Content {
+    position: relative; /* Lar innholdet være over overlay */
+    z-index: 3; /* Sørger for at innholdet er over både bakgrunn og overlay */
+    padding: 20px;
+    max-width: 800px; /* Begrens bredde på innholdet */
+    margin: auto; /* Sentrerer innholdet horisontalt */
+}
+
+
+.apple-picking-img{
+    width: 100%; /* Bildet fyller hele bredden */
+    height: auto; /* Beholder proporsjoner */
+    margin: 20px 0; /* Litt plass over og under bildet */
+    display: block;
+    /*max-width: 900px;*/
+  
+}
+.element {
+    display: none;
+}
+
+
+
+
