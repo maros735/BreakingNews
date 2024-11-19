@@ -3,11 +3,13 @@ body, html {
     
     padding: 0;
     font-family: Arial, sans-serif;
+    margin: 0;
     
+
 }
 
 header {
-    background-color: #333;
+    background-color: #002040;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -16,6 +18,21 @@ header {
     top: 0;
     z-index: 1000;
 }
+
+
+.news-section {
+    padding: 20px;
+    background-color: aliceblue;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.news-section img {
+    max-width: 100%;
+    height: 500px;
+    border-radius: 15px;
+}
+
 
 
 
@@ -116,25 +133,15 @@ p{
     line-height: 1.5;
 }
 
-.news-section {
-    padding: 20px;
-    background-color: #f4f4f4;
-    margin: 20px 0;
-    text-align: center;
-}
-
-.news-section img {
-    max-width: 100%;
-    height: 500px;
-}
 
 /*button*/ a {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #002040;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 /*button*/ a :hover {
@@ -155,7 +162,7 @@ a.plain-link:hover {
 
 
 footer {
-    background-color: #333;
+    background-color: #002040;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -292,6 +299,79 @@ p.art2{
 }
 .element {
     display: none;
+}
+
+
+.art3-headline{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 1rem;
+
+}
+
+
+.parallax {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 50vh;
+    /*background-size: cover;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.pic1{
+    background-image: url('');
+    /*overflow:hidden;*/
+    width: 100%;
+    margin: 0 auto;
+    min-height: 70vh;
+    background-attachment: fixed ;
+    background-position: center ;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+
+#pic3{
+    background-image: url('');
+    overflow:hidden;
+    min-height: 500px;
+}
+
+#pic2{
+    background-image: url('');
+    overflow:hidden;
+    min-height: 500px;
+}
+
+
+
+
+.pic4{
+    background-image: url('img/infografikk.png');
+    
+    width: 100%;
+    margin: 0 auto;
+    min-height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 950px;
+}
+
+
+
+
+.art3{
+    max-width: 50%;
+    margin: 2rem auto;
+    padding: 1rem;
+    font-size: 20px;
+
+
 }
 
 
