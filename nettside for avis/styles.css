@@ -195,7 +195,7 @@ footer ul li {
     justify-content: center;
     align-items: center;
     padding: 20px; /* Legg til litt mellomrom rundt */
-    margin-top: 22rem;
+    margin-top: 10rem;
     
 }
 
@@ -312,51 +312,45 @@ p.art2{
 
 
 .parallax {
-    width: 100%;
-    margin: 0 auto;
-    min-height: 50vh;
-    /*background-size: cover;*/
+    background-size: 950px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
 
 }
-.pic1{
-    background-image: url('');
+#pic1{
+    background-image: url('img/energidrikk.jpg');
     /*overflow:hidden;*/
+    
+    overflow: hidden;
     width: 100%;
     margin: 0 auto;
     min-height: 70vh;
-    background-attachment: fixed ;
-    background-position: center ;
+    background-attachment: fixed;
+    background-position: bottom center;
     background-repeat: no-repeat;
-    
+    background-size: cover;
 }
 
 
 
-
-#pic3{
-    background-image: url('');
-    overflow:hidden;
-    min-height: 500px;
-}
 
 #pic2{
-    background-image: url('');
+    background-image: url('img/energy-drinks.jpg');
     overflow:hidden;
     min-height: 500px;
+    margin: 2rem;
 }
 
 
 
 
-.pic4{
+.pic3{
     background-image: url('img/infografikk.png');
     
     width: 100%;
     margin: 0 auto;
-    min-height: 50vh;
+    min-height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 950px;
@@ -368,9 +362,9 @@ p.art2{
 .art3{
     max-width: 50%;
     margin: 2rem auto;
-    padding: 1rem;
+    padding-bottom: 2rem;
     font-size: 20px;
-
+    
 
 }
 
