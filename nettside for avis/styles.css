@@ -131,6 +131,7 @@ main {
 
 p{
     line-height: 1.5;
+
 }
 
 
@@ -366,6 +367,107 @@ p.art2{
     font-size: 20px;
     
 
+}
+
+
+.art4headline{
+    font-weight: bold;
+    text-align: center;
+    font-family: "Bungee Tint", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+
+}
+
+.img1{
+    background-image: url('img/corona-red.jpg');
+    width: 100%;
+    min-height: 70vh;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.img2{
+    background-image: url('https://cdn.pixabay.com/photo/2020/03/30/09/15/corona-4983590_1280.jpg');
+    width: 100%;
+    min-height: 70vh;
+    padding-bottom: 2rem;
+}
+
+
+.img3{
+    background-image: url('img/corna-Testing.jpg');
+    width: 100%;
+    min-height: 70vh;
+    padding-bottom: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.img4{
+    background-image: url('https://images.pexels.com/photos/8949869/pexels-photo-8949869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    width: 100%;
+    min-height: 70vh;
+    padding-bottom: 2rem;
+
+}
+
+.img5{
+    background-image: url('img/Sprøyte.jpg');
+    width: 100%;
+    min-height: 70vh;
+    padding-bottom: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.img6{
+    background-image: url('img/corona-white.jpg');
+    width: 100%;
+    min-height: 70vh;
+    padding-bottom: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.art4{
+    max-width: 50%;
+    margin: 2rem auto;
+    padding-bottom: 2rem;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+ h4{
+    
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 50%;
+    margin: 2rem auto;
+ }
+
+ .art4 p{
+    line-height: 1.7;
+    padding-bottom: 1.5rem;
+ }
+
+ #under-img2{
+    padding-top: 1rem;
+    line-height: 1.7;
+    padding-bottom: 1.5rem;
+ }
+
+ #subheader{
+    margin-bottom: 0;
+ }
+#subheading{
+margin-top: 0.5rem;
 }
 
 
