@@ -150,14 +150,14 @@ p{
 }
 
 a.plain-link {
-    text-decoration: none; /* Fjerner understreking */
-    color:#00a9ff; /* Beholder tekstfargen fra omgivelsene */
+    text-decoration: underline; 
+    color:#252fb9; 
     background: none;
     padding: 0;
 }
 
 a.plain-link:hover {
-    text-decoration: underline; /* Understreking på hover */
+    color: blueviolet;
 }
 
 
