@@ -76,16 +76,16 @@ header {
 /* Content section styling */
 .content {
     display: flex;
-    max-width: 500px;
+    max-width: 700px;
     flex-direction: column;
     /*align-items: center;*/
-    padding: 20px;
+    padding: 30px;
     border-radius: 0.5em;
     color: rgba(253, 253, 253, 0.763);
     background-color: #002040;
     box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
     font-size: 15px;
-    margin-right: 20rem;
+   /*margin-right: 20rem;*/
     
     
 
@@ -93,33 +93,32 @@ header {
 
 .content2 {
     display: flex;
-    max-width: 500px;
+    max-width: 700px;
     flex-direction: column;
     /*align-items: center;*/
-    padding: 20px;
+    padding: 30px;
     border-radius: 0.5em;
     color: rgba(253, 253, 253, 0.763);
     background-color: #002040;
     box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
     font-size: 15px;
-    margin-right: 20rem;
+    /*margin-right: 20rem;*/
    
 
 }
 .content3 {
 
     display: flex;
-    max-width: 500px;
+    max-width: 700px;
     flex-direction: column;
     /*align-items: center;*/
-    padding: 20px;
+    padding: 30px;
     border-radius: 0.5em;
     color: rgba(253, 253, 253, 0.763);
     background-color: #002040;
     box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
     font-size: 15px;
-    margin-right: 20rem;
-
+    margin-top: 15rem;
 }
 main {
     padding-top: 70px;
@@ -144,6 +143,10 @@ p{
     cursor: pointer;
     border-radius: 10px;
 }
+a:hover{
+    color: rgb(145, 205, 245);
+}
+
 
 /*button*/ a :hover {
     background-color: #555;
@@ -240,11 +243,13 @@ p.art2{
     z-index: 1; /* Bakgrunn under innholdet */
     top:0;
     left: 0;
+
 }
 
 .bgimg-2{
     background-image: url("https://images.pexels.com/photos/5529505/pexels-photo-5529505.jpeg");
     min-height: 500px;
+
 }
 .bgimg-3{
     background-image: url("https://images.pexels.com/photos/5528994/pexels-photo-5528994.jpeg?auto=compress&cs=tinysrgb&w=600");
@@ -260,6 +265,7 @@ p.art2{
   
     background-position: center;
     background-size: cover;
+    border-radius: 8px;
  }
 
 
